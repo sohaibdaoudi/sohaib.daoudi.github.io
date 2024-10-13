@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV en ligne</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            line-height:1.6;
+            margin: 0;
+            padding:0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background: #fff;
+            padding:20px;
+            box-shadow:  0 0 10px rgba(0, 0, 0, 1);
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .section-tilte {
+            color: #444;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        form{
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #88e9e9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+
+        }
+        label{
+            font-weight: bold ;
+        }
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        #tr1{
+            background-color: #4cae4c;
+        }
+        table{
+            border-collapse: collapse;
+            width: 75%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="conrainer">
+        <header>
+        <h1>Mon CV</h1>
+        <p>Un aperçu de mon parcours professionnel et de mes competences</p>
+
+        <section>
+        <h2 class="section-tilte">Informations personnelles</h2>
+        <img src="Data/morocco-flag-with-grunge-texture-png.png" alt="Photo de Profil" style="width: 150px; height: 150px; border-radius: 50%;">
+        <p><strong>NOM: </strong> SOHAIB DAOUDI</p>
+        <p><strong>Email: </strong> sohaib.daoudi.9404@gmail.com</p>
+        <p><strong>Telephone: </strong> 0612345678</p>
+        </section>
+
+        <section>
+            <h2 class="section-tilte">Experience profesionnelle</h2>
+            <ul><li>
+                <strong>Développeur Web</strong> chez ENSAM (2022 - Présent)
+                <p>Développement d'app web dynamiques avec HTML, CSS, et JS.</p>
+            </li>
+            <li>
+                <strong>Stagiaire en informatique</strong> chez NASA (2020 - 2022)
+                <p>Création de sites vitrines pour des nouvelles de NASA.</p>
+            </li>
+        </ul>
+
+        </section>
+        <section>
+            <h2 class="'section-tilte">Formation</h2>
+            <table border="2">
+                <tr id="tr1">
+                    <th><strong>Annees</strong></th>
+                    <th><strong>Diplomes</strong></th>
+                    <th><strong>Etablisement</strong></th>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>License en AI</td>
+                    <td>University of ENSAM</td>
+                    
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>Bac SM</td>
+                    <td>Lycee Omar Ibn Alkhatabb Meknes</td>
+                    
+                </tr>
+
+            </table>
+        </section>
+        <section>
+            <h2 class="section-tilte">Competences</h2>
+            <ul>
+                HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Gestion de bases de données (SQL)</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2 class="section-tilte">Centers d'interet</h2>
+                <p>Music, traveling, technologies, Football</p>
+
+        </section>
+        <section>
+            <h2 class="section-tilte">Contacter moi</h2>
+            <form action="/submit-form" method="post">
+            <label for="name">Nom :</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" placeholder="example@atc.cb" required><br><br>
+            <label for="massage">Message :</label><br>
+            <textarea type="text" id="name" name="name" rows ="4" cols="50" placeholder="Your massage" required></textarea><br><br>
+            <button type="submit">Send</button>
+            </form>
+            <a href="https://www.linkedin.com/in/sohaib-daoudi-61215426a/" target="_blank">My linkedin</a>
+        </section>
+
+
+
+
+        </header>
+    </div>
+
+
+    
+</body>
+</html>
